@@ -2,6 +2,8 @@
 ![Creator logo] (creatorlogo.png)
 
 # Using OpenWrt on Creator (Ci40) Marduk platform
+
+#### For more details about the platform please visit [Creator (Ci40) Marduk](https://community.imgtec.com/platforms/creator-ci40/)
 ----
 
 ## Overview
@@ -35,26 +37,29 @@ there are some key paths where IMG have added solutions:
 | target/linux/pistachio/config-4.1		| IMG pistachio SoC specific kernel config							        |
 | target/linux/pistachio/creator-platform.config| IMG creator marduk platform specific openwrt config							| target/linux/pistachio/marduk/profiles/maruk.mk	| IMG pistachio SoC based Marduk platform profile			|
 
-@section getting_started_sec Getting started
+## Getting started
 To simply make a build based on the IMG default config run the following commands:
 
     $ cd openwrt
     $ ./scripts/feeds update -a
     $ ./scripts/feeds install -a
+_Ignore any "WARNING: No feed for package..." from the install feeds step._
 
 Load Marduk platform specific openwrt configuration for Pistachio.
 
     $ make menuconfig
 
-1. Select the "Target System" as IMG MIPS Pistachio 
-"Target System (Atheros AR7xxx/AR9xxx) --->
- (X) IMG MIPS Pistachio
-2. Check the Target Profile (Basic platform profile for Marduk)  ---> (X) Basic platform profile for Marduk
+1. Select the "Target System" as IMG MIPS Pistachio
+
+    Target System (Atheros AR7xxx/AR9xxx) --->(X) IMG MIPS Pistachio
+
+2. Check the "Target Profile" is set to Basic platform profile for Marduk
+
+    Target Profile (Basic platform profile for Marduk)  ---> (X) Basic platform profile for Marduk
 
 You can also load Marduk platform specific openwrt configuration for Pistachio by pre-defined config.
 
     $ cat target/linux/pistachio/creator-platform.config > .config
-    $ make defconfig
 
 Now build OpenWrt in standard way:
 
@@ -116,19 +121,6 @@ Then connect to it (remember to choose the correct device listed in above comman
 
     $ sudo miniterm.py /dev/ttyUSB0 -b 115200
 
-## Instructions for upgrading u-boot image
-
-- Flash the Marduk board with u-boot-pistachio-nor.img
-  - This can be flashed on NOR flash using DediPro programmer on Windows(requires an adaptor cable for Marduk).
-  - Or use the following command on the console to run it directly on Marduk board, in case you have pre-built linux image.
-
-    `# flashcp -v u-boot-pistachio-nor.img /dev/mtd0`
-
-However you will need to enable flashcp in the busybox.
-
-    $make menuconfig
-
-
 ## Instructions for putting root filesystem on usb and booting from usb drive
 - Firstly you need to format USB drive into ext4 parition. Partition your media with one big ext4 partion (use dos partition table)
 - You can check the partition number by following way:
@@ -156,29 +148,28 @@ Create new partition table:
 
 Mount the usb drive:
 
-    $ sudo /dev/sdb1 /media/user/43e3311e-7b95-4693-bfcd-b07fa4590a0d
+    $ sudo mount /dev/sdb1 /mnt/
 
 To put filesystem on USB you will need
 
-    openwrt-pistachio-pistachio_marduk-uImage,
+    openwrt-pistachio-pistachio_marduk-uImage
     openwrt-pistachio-marduk-marduk-rootfs.tar.gz
     pistachio_marduk.dtb
 all of which are available at "openwrt/bin/pistachio"
 
 Extract the openwrt-pistachio-marduk-marduk-rootfs.tar.gz onto the partition you just created
 
-Mount the usb drive:
-
-    # sudo rm -rf <mount-point> #<mount-point> is assumed to be the path of USB drive i.e. /media/<path_to_pendrive>  (be careful !)
-    # sudo tar -xf bin/pistachio/openwrt-pistachio-rootfs.tar.gz -C <mount-point>/
+    # sudo rm -rf /mnt/*
+    # sudo tar -xf bin/pistachio/openwrt-pistachio-marduk-marduk-rootfs.tar.gz -C /mnt/
+    # sudo umount /mnt/
 
 
 Run "sync" command to synchronize the data properly on the USB drive.
-    
+
     # sync
 
 
-Power on the board after setting the boot mode for Boot from SPI flash and connect the usb drive to the board.
+Connect the USB drive and power on the board.
 
 Press Enter on the serial console to get the uboot prompt
 Check if the all the environment variables are setup properly on the uboot prompt or not?
@@ -222,8 +213,7 @@ Now restart service:
 
 ####Configure Uboot
 
-Now use [Serial Console] (@ref Serial console) to connect device to host PC. Switch on device
-and press any key in first 2 seconds. After that you will drop to a u-boot console.
+Now use Serial Console to connect device to host PC. Switch on device and press any key in first 2 seconds. After that you will drop to a u-boot console.
 
 To use tftp boot, set following environment variables.
 
@@ -236,7 +226,6 @@ To use tftp boot, set following environment variables.
 However beware of running out of IP addresses if we keep on switching the mac addresses.
 
     # setenv serverip <server_ip> # Server IP address where TFTP and an NFS server is running
-
     # saveenv # Save environment variables
 
 _note: No need to set these environment variables for next boot since these are already saved._
@@ -247,7 +236,7 @@ Now start tftp boot:
 
 
 You should see the logs on the console as below:
---
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  
   BusyBox v1.24.1 (2016-03-04 17:43:09 IST) built-in shell (ash)
@@ -278,7 +267,8 @@ You can change that by editing /etc/config/network script and restarting it.
 
 ### Known Issues:
 
-- Cleaned up kernel patches will be upstreamed soon 
+- Cleaned up kernel patches will be upstreamed soon.
 - WiFi is not configured in this build.
+- Booting from flash is not included.
 
 
