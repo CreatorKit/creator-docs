@@ -38,6 +38,15 @@ there are some key paths where IMG have added solutions:
 | target/linux/pistachio/creator-platform.config| IMG creator marduk platform specific openwrt config							| target/linux/pistachio/marduk/profiles/maruk.mk	| IMG pistachio SoC based Marduk platform profile			|
 
 ## Getting started
+
+Firstly, to obtain a copy of the (Ci40) Marduk platform supported OpenWrt source code:
+
+ * Sign up for a Github account
+
+ * Install Git:  ```` sudo apt-get install git ````
+
+ * Clone the repository: ```` git clone https://github.com/FlowM2M/openwrt.git ````
+
 To simply make a build based on the IMG default config run the following commands:
 
     $ cd openwrt
