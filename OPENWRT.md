@@ -279,5 +279,5 @@ You can change that by editing /etc/config/network script and restarting it.
 - Cleaned up kernel patches will be upstreamed soon.
 - WiFi is not configured in this build.
 - Booting from flash is not included.
-
+- OPKG support is not implemented.
 
