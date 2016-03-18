@@ -1,3 +1,5 @@
+![Creator logo](../creatorlogo.png)
+
 # Toolbox
 
 The toolbox is a reference page for you to use to set up your kit. Follow the steps listed in the project pages and refer back to this page for more detail on individual steps.
