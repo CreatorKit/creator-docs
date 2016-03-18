@@ -10,7 +10,7 @@
 
 **Contrained Device** - This term is a catch-all for very simple devices that connect to your Ci40 in a local network. Your Clicker boards included in the kit are an example of a Constrained Device.
 
-**OpenWRT** - This is the operating system used on Ci40 for the Creator Kit projects. Ci40 can run a variety of operating systems, but OpenWRT is used in these examples. [Openwrt website](https://openwrt.org/)
+**OpenWRT** - This is the Linux distribution used on Ci40 for the Creator Kit projects. Ci40 can run a variety of operating systems, but OpenWRT is used in these examples. [Openwrt website](https://openwrt.org/)
 
 **6LowPan Clicker** - 2 6LowPAN Clicker boards are included in the Creator Kit to allow you to complete hte 5 projects. Each Clicker connects to the Ci40 over 6LowPAN and acts as a remote sensor/actuator by using Click boards
 
