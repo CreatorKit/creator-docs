@@ -27,10 +27,6 @@ You can get pre-built releases or source code of the Creator Kit projects to wor
 
 [Source Code](http://github.com/CreatorKit)
 
-Clone the ""manifest"" repository using
-
-<code>$ git clone "LINK"</code>
-
 ### Connecting to Ci40 via Serial
 
 ![serial](serialport.resized.jpg)
