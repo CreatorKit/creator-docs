@@ -1,3 +1,5 @@
+![Creator logo](../creatorlogo.png)
+
 # Project 2 - Motion Controlled Light
 
 ## Intro
