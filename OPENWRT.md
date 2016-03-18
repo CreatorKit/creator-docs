@@ -131,8 +131,8 @@ Then connect to it (remember to choose the correct device listed in above comman
     $ sudo miniterm.py /dev/ttyUSB0 -b 115200
 
 ## Instructions for putting root filesystem on usb and booting from usb drive
-- Firstly you need to format USB drive into ext4 parition. Partition your media with one big ext4 partion (use dos partition table)
-- You can check the partition number by following way:
+Firstly you need to format USB drive into ext4 parition. Partition your media with one big ext4 partion (use dos partition table)
+You can check the partition number by following way:
 
 
 `$ mount | grep /media
@@ -157,14 +157,9 @@ Create new partition table:
 
 Mount the usb drive:
 
-    $ sudo mount /dev/sdb1 /mnt/
+    $ sudo mount /dev/sdx1 /mnt/
 
-To put filesystem on USB you will need
-
-    openwrt-pistachio-pistachio_marduk-uImage
-    openwrt-pistachio-marduk-marduk-rootfs.tar.gz
-    pistachio_marduk.dtb
-all of which are available at "openwrt/bin/pistachio"
+To put filesystem on USB you will need 'openwrt-pistachio-marduk-marduk-rootfs.tar.gz' which is available at "openwrt/bin/pistachio"
 
 Extract the openwrt-pistachio-marduk-marduk-rootfs.tar.gz onto the partition you just created
 
@@ -180,14 +175,60 @@ Run "sync" command to synchronize the data properly on the USB drive.
 
 Connect the USB drive and power on the board.
 
-Press Enter on the serial console to get the uboot prompt
-Check if the all the environment variables are setup properly on the uboot prompt or not?
+Press Enter on the serial console to cancel the autoboot and to get the uboot prompt. Check if the all the environment variables are setup properly on the uboot prompt or not
 
     $ pistachio # printenv
 
 Type following command to boot from usb.
 
     $ pistachio # run usbboot
+
+## Boot from SD Card
+Similar to the instructions for Boot from usb drive, you need to format the SD card into ext4 parition. Follow the steps mentioned above by making subtle changes
+
+
+`$ mount | grep /media
+/dev/sdc1 on /media/user/5c0dac14-1d47-4a39-8b06-e27861473670 type ext4 (rw,nosuid,nodev,uhelper=udisks2)'
+
+SD media essentially mounts at /dev/sdc1 on a computer.  However, make sure to double-check if it gets somehow mounted differently on your computer, in which case, <b>IMPORTANT! Make sure that you replace /dev/sdc with /dev/sdx for the right device name</b>
+
+Unmount the filesystem before creating new partition table:
+
+    $ sudo umount /dev/sdc1
+
+Create new partition table:
+
+    $ sudo fdisk /dev/sdc
+    > enter 'o' to create a new empty DOS partition table
+    > enter 'n' to create a new partition; just press return at every prompt to accept the default values
+    > enter 'w' to write the new partition table and exit
+    $ sudo mkfs.ext4 /dev/sdc1
+
+Mount the SD media:
+
+    $ sudo mount /dev/sdc1 /mnt/
+
+To put filesystem on SD you will need 'openwrt-pistachio-marduk-marduk-rootfs.tar.gz' which is available at "openwrt/bin/pistachio"
+
+Extract the openwrt-pistachio-marduk-marduk-rootfs.tar.gz onto the partition you just created
+
+    # sudo rm -rf /mnt/*
+    # sudo tar -xf bin/pistachio/openwrt-pistachio-marduk-marduk-rootfs.tar.gz -C /mnt/
+    # sudo umount /mnt/
+
+Run "sync" command to synchronize the data properly on the SD card.
+
+    # sync
+
+Connect the SD card in the slot and power on the board.
+
+Press Enter on the serial console to cancel the autoboot and to get the uboot prompt. Check if the all the environment variables are setup properly on the uboot prompt or not
+
+    $ pistachio # printenv
+
+Type following command to boot from SD.
+
+    $ pistachio # run mmcboot
 
 ## TFTP Boot
 For TFTP boot, we need TFTP server serving kernel image (uImage), dtb (*.dtb)
