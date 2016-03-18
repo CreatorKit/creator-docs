@@ -1,3 +1,5 @@
+![Creator logo](../creatorlogo.png)
+
 # Project 5 - Automated Climate Control
 
 ## Intro
