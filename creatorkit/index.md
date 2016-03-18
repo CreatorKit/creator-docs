@@ -1,3 +1,5 @@
+![Creator logo](../creatorlogo.png)
+
 # Scope
 
 Creator Kit has been designed to be the building blocks of your IoT solution. Ci40 is the hub and gateway, Clicker boards offer remote sensors and actuators, and FlowM2M services allow data to be sent, stored and visualized.
