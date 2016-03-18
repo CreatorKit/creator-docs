@@ -138,16 +138,19 @@ Initially you need to install dependencies required to build. run the following 
 
 If you do not have repo installed run the following
 
-<code>
-$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-$ chmod a+x ~/bin/repo
-</code>
+<code>$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo</code>
+
+<code>$ chmod a+x ~/bin/repo</code>
+
 
 You should now be able to run the following in a directory of your choice.
 
 <code>$ repo init -u  https://github.com/CreatorKit/manifest.git</code>
+
 <code>$ repo sync</code>
+
 <code>$ cd build</code>
+
 <code>$ make</code>
 
 
