@@ -4,7 +4,7 @@
 
 **Creator Kit** - This is the name of the kit [available here](http://www.imgtec.com) that includes the hardware you need to complete the projects detailed in this guide.
 
-**Ci40** - Ci40 is largest board in your kit and is the IoT hub. It connects to the Internet, and has many connectivity options for constrained devices to connect to (WiFi/6LowPAN/BlueTooth). See full details of Ci40 on the [FlowM2M website](http://www.flowcloud.io)
+**Ci40 (Marduk)**- Ci40 is largest board in your kit and is the IoT hub. It connects to the Internet, and has many connectivity options for constrained devices to connect to (WiFi/6LowPAN/BlueTooth). See full details of Ci40 on the [FlowM2M website](http://www.flowcloud.io)
 
 **IoT** - Abbreviation of "Internet of Things". IoT is a concept in which many devices are connected together to work more efficiently/effectively. Any system in which multiple devices are connected together and connected to the Internet can be considered to be an IoT system.
 
