@@ -1,3 +1,5 @@
+![Creator logo](../creatorlogo.png)
+
 # Project 3 - Temperature Logging
 
 ## Intro
