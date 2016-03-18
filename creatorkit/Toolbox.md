@@ -33,7 +33,7 @@ You can get pre-built releases or source code of the Creator Kit projects to wor
 
 ![serial](serialport.resized.jpg)
 
-The next step is to connect to your Ci40 using a serial terminal. Connect a microUSB-USB A cable to the port within the Mikrobus connector and into your PC. You can use any serial terminal program you like with the baud rate set to 115200. The following is an example using miniterm in Ubuntu
+The next step is to connect to your Ci40 using a serial terminal. Connect a microUSB-USB A cable to the port within the Mikrobus connector and into your PC. You can use any serial terminal program you like set to the standard 115200-N-8-1. The following is an example using miniterm in Ubuntu
 
 <code>$ sudo miniterm.py /dev/ttyUSB0 -b 115200</code>
 
