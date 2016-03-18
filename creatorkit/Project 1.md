@@ -8,16 +8,16 @@ This project requires the Ci40 and 2 Clicker boards from Creator Kit. It does no
 
 ## Steps
 
-To complete these steps, refer to the [Toolbox](http://localhost:8000/Toolbox) for detailed descriptions of each action. You will need a [FlowM2M account](http://localhost:8000/Toolbox/#creating-a-flowm2m-account) too.
+To complete these steps, refer to the [Toolbox](Toolbox.md) for detailed descriptions of each action. You will need a [FlowM2M account](Toolbox.md#creating-a-flowm2m-account) too.
 
-* Get the code: [Pre-built Release](http://github.com) or [Source Code](http://github.com)
-* [Flash](http://localhost:8000/Toolbox/#programming-a-6lowpan-clicker) the ""lwm2m-client-contiki-button"" hex file onto one Clicker board - Make a note of which one it is
-* [Flash](http://localhost:8000/Toolbox/#programming-a-6lowpan-clicker) the ""lwm2m-client-contiki-led"" hex file onto the second Clicker board - Make a note of which one it is
-* [Connect](http://localhost:8000/Toolbox/#connecting-ci40-to-the-internet) Ci40 to the Internet
-* On your Ci40, run the ""command"" command in the [serial terminal](http://localhost:8000/Toolbox/#connecting-to-ci40-via-serial)
-* [Provision](http://localhost:8000/Toolbox/#provisioning-ci40) Ci40
+* Get the code: [Pre-built Release](http://github.com/creatorkit) or [Source Code](http://github.com/creatorkit)
+* [Flash](Toolbox.md#programming-a-6lowpan-clicker) the ""lwm2m-client-contiki-button"" hex file onto one Clicker board - Make a note of which one it is
+* [Flash](Toolbox.md#programming-a-6lowpan-clicker) the ""lwm2m-client-contiki-led"" hex file onto the second Clicker board - Make a note of which one it is
+* [Connect](Toolbox.md#connecting-ci40-to-the-internet) Ci40 to the Internet
+* On your Ci40, run the ""command"" command in the [serial terminal](Toolbox.md#connecting-to-ci40-via-serial)
+* [Provision](Toolbox.md#provisioning-ci40) Ci40
 * Power on both Clicker boards
-* [Provision](http://localhost:8000/Toolbox/#provisioning-clicker) the Clickers via the Ci40 web interface
+* [Provision](Toolbox.md#provisioning-clicker) the Clickers via the Ci40 web interface
 * Press the button on the Button Clicker and observe the LED on the LED Clicker
 * Log into your FlowM2M account and navigate to the Message Viewer - Observe it when you press the Button
 
