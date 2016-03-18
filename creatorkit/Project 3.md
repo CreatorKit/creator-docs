@@ -8,15 +8,15 @@ This project requires the Ci40 and 1 of the Clicker board from Creator Kit. It a
 
 ## Steps
 
-To complete these steps, refer to the [Toolbox](http://localhost:8000/Toolbox) for detailed descriptions of each action required.
+To complete these steps, refer to the [Toolbox](Toolbox.md) for detailed descriptions of each action required.
 
-* Get the code: [Pre-built Release](http://github.com) or [Source Code](http://github.com)
-* [Flash](http://localhost:8000/Toolbox/#programming-a-6lowpan-clicker) the ""Temperature"" hex file onto one Clicker board and connect the Thermo2 Click board.
-* [Connect](http://localhost:8000/Toolbox/#connecting-ci40-to-the-internet) Ci40 to the Internet
+* Get the code: [Pre-built Release](http://github.com/creatorkit) or [Source Code](http://github.com/creatorkit)
+* [Flash](Toolbox.md#programming-a-6lowpan-clicker) the ""Temperature"" hex file onto one Clicker board and connect the Thermo2 Click board.
+* [Connect](Toolbox.md#connecting-ci40-to-the-internet) Ci40 to the Internet
 * On your Ci40, run the ""command"" command
-* [Provision](http://localhost:8000/Toolbox/#provisioning-ci40) Ci40
+* [Provision](Toolbox.md#provisioning-ci40) Ci40
 * Power on both Clicker boards
-* [Provision](http://localhost:8000/Toolbox/#provisioning-clicker) the Clickers via the Ci40 web interface
+* [Provision](Toolbox.md#provisioning-clicker) the Clickers via the Ci40 web interface
 * Log into the FlowM2M website ""Link"" to view the data being collected by your sensor
 * Download either the iOS (""Link"") or Android app (""Link"") and login to view the data.
 
