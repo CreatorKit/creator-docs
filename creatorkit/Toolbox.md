@@ -132,4 +132,4 @@ Once your Ci40 is provisioned you can continue using the web interface to also p
 
 Note: You do not need to do this to set up and run the example projects for Creator Kit. If you want to expand on the projects and eventually build your own it is recommended that you set up the first project and then come back to this section once you have seen the system in action. You can then move on to building your own IoT project using Creator Kit.
 
-The SDK has documentation with it that details the steps required to build from source. [Download the SDK from github](http://www.github.com/CreatorKit) and view the readme and docs folder for the full instructions.
+The SDK has documentation that details the steps required to build from source. [Download the SDK from github](http://www.github.com/CreatorKit) and view the documentation within the SDK or read a summary [here on github](../ci40openwrt/OPENWRT.md) for more details.
