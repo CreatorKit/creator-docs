@@ -8,9 +8,9 @@
 
 **IoT** - Abbreviation of "Internet of Things". IoT is a concept in which many devices are connected together to work more efficiently/effectively. Any system in which multiple devices are connected together and connected to the Internet can be considered to be an IoT system.
 
-**Contrained Device** - This term is a catch-all for very simple devices that connect to your Ci40 in a local network. Your Clicker boards included in the kit are an example of a Constrained Device.
+**Constrained Device** - This term is a catch-all for very simple devices that connect to your Ci40 in a local network. Your Clicker boards included in the kit are an example of a Constrained Device.
 
-**OpenWRT** - This is the Linux distribution used on Ci40 for the Creator Kit projects. Ci40 can run a variety of operating systems, but OpenWRT is used in these examples. [Openwrt website](https://openwrt.org/)
+**OpenWrt** - This is the Linux distribution used on Ci40 for the Creator Kit projects. Ci40 can run a variety of operating systems, but OpenWrt is used in these examples. [OpenWrt website](https://openwrt.org/)
 
 **6LowPAN** - 6LoWPAN is an acronym of IPv6 over Low power Wireless Personal Area Networks. It is designed for connecting small remote devices together.
 
