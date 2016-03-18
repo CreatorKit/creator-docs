@@ -1,3 +1,5 @@
+![Creator logo](../creatorlogo.png)
+
 # Project 1 - IoT Button
 
 ## Intro
