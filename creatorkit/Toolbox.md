@@ -29,6 +29,8 @@ You can get pre-built releases or source code of the Creator Kit projects to wor
 
 [Source Code](http://github.com/CreatorKit/manifest)
 
+See [building code from source](#building-code-from-source) for information on how to use the source code.
+
 ### Connecting to Ci40 via Serial
 
 ![serial](serialport.resized.jpg)
@@ -134,16 +136,19 @@ Initially you need to install dependencies required to build. run the following 
 
 <code>$ sudo apt-get -y install g++ gcc binutils bzip2 flex python perl make libncurses5-dev libssl-dev grep unzip gawk subversion zlib1g-dev build-essential git mercurial cmake python-nose python-lxml</code>
 
-You should now be able to run the following in a directory of your choice
+If you do not have repo installed run the following
 
 <code>
-$ repo init -u  https://github.com/CreatorKit/manifest.git
-
-$ repo sync
-
-$ cd build
-
-$ make
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+$ chmod a+x ~/bin/repo
 </code>
+
+You should now be able to run the following in a directory of your choice.
+
+<code>$ repo init -u  https://github.com/CreatorKit/manifest.git</code>
+<code>$ repo sync</code>
+<code>$ cd build</code>
+<code>$ make</code>
+
 
 
