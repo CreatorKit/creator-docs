@@ -8,16 +8,16 @@ This project requires the Ci40 and 2 Clicker boards from Creator Kit. It require
 
 ## Steps
 
-To complete these steps, refer to the [Toolbox](http://localhost:8000/Toolbox) for detailed descriptions of each action required.
+To complete these steps, refer to the [Toolbox](Toolbox.md) for detailed descriptions of each action required.
 
-* Get the code: [Pre-built Release](http://github.com) or [Source Code](http://github.com)
-* [Flash](http://localhost:8000/Toolbox/#programming-a-6lowpan-clicker) the ""Movement Sensor"" hex file onto one Clicker board and connect your PIR Movement Sensor Click board.
-* [Flash](http://localhost:8000/Toolbox/#programming-a-6lowpan-clicker) the ""LED"" hex file onto the second Clicker board
-* [Connect](http://localhost:8000/Toolbox/#connecting-ci40-to-the-internet) Ci40 to the Internet
+* Get the code: [Pre-built Release](http://github.com/creatorkit) or [Source Code](http://github.com/creatorkit)
+* [Flash](Toolbox.md#programming-a-6lowpan-clicker) the ""Movement Sensor"" hex file onto one Clicker board and connect your PIR Movement Sensor Click board.
+* [Flash](Toolbox.md#programming-a-6lowpan-clicker) the ""LED"" hex file onto the second Clicker board
+* [Connect](Toolbox.md#connecting-ci40-to-the-internet) Ci40 to the Internet
 * On your Ci40, run the ""command"" command
-* [Provision](http://localhost:8000/Toolbox/#provisioning-ci40) Ci40
+* [Provision](Toolbox.md#provisioning-ci40) Ci40
 * Power on both Clicker boards
-* [Provision](http://localhost:8000/Toolbox/#provisioning-clicker) the Clickers via the Ci40 web interface
+* [Provision](Toolbox.md#provisioning-clicker) the Clickers via the Ci40 web interface
 * Move your hand in front of the PIR Movement Sensor Click
 * Observe the LED on the LED Clicker
 * Log into your FlowM2M account and navigate to the Message Viewer - Observe it when movement is detected and when the LED timeout occurs
