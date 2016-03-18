@@ -1,3 +1,5 @@
+![Creator logo](../creatorlogo.png)
+
 # Glossary
 
 **Creator Kit** - This is the name of the kit [available here](http://www.imgtec.com) that includes the hardware you need to complete the projects detailed in this guide.
