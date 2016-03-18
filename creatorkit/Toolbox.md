@@ -27,7 +27,7 @@ You can get pre-built releases or source code of the Creator Kit projects to wor
 
 [Releases](http://github.com/CreatorKit)
 
-[Source Code](http://github.com/CreatorKit)
+[Source Code](http://github.com/CreatorKit/manifest)
 
 ### Connecting to Ci40 via Serial
 
@@ -88,9 +88,7 @@ To boot from microSD:
 
 ## Connecting Ci40 to the Internet
 
-Ci40 supports Ethernet and WiFi connections.
-
-To connect to WiFi via SoftAP you need a WiFi capable device (phone,laptop etc.). Power on Ci40 and browse for WiFi networks on your WiFi device. You should find an open WiFi network called "Creator XXXXXXXX". Connect to this network and open a web browser. Navigate to 192.168.1.1 in your browser. You will be presented with a web page that will allow you to choose a network from a list, enter a password and save. Your Ci40 will then connect to this network.
+Ci40 supports Ethernet for network connectivity.
 
 ## Programming a 6LoWPAN Clicker
 
@@ -132,4 +130,20 @@ Once your Ci40 is provisioned you can continue using the web interface to also p
 
 Note: You do not need to do this to set up and run the example projects for Creator Kit. If you want to expand on the projects and eventually build your own it is recommended that you set up the first project and then come back to this section once you have seen the system in action. You can then move on to building your own IoT project using Creator Kit.
 
-The SDK has documentation with it that details the steps required to build from source. [Download the SDK from github](http://www.github.com/CreatorKit) and view the readme and docs folder for the full instructions.
+Initially you need to install dependencies required to build. run the following the terminal on your Ubuntu build machine
+
+<code>$ sudo apt-get -y install g++ gcc binutils bzip2 flex python perl make libncurses5-dev libssl-dev grep unzip gawk subversion zlib1g-dev build-essential git mercurial cmake python-nose python-lxml</code>
+
+You should now be able to run the following in a directory of your choice
+
+<code>
+$ repo init -u  https://github.com/CreatorKit/manifest.git
+
+$ repo sync
+
+$ cd build
+
+$ make
+</code>
+
+

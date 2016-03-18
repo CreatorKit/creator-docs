@@ -14,6 +14,6 @@
 
 **6LowPAN** - 6LoWPAN is an acronym of IPv6 over Low power Wireless Personal Area Networks. It is designed for connecting small remote devices together.
 
-**6LowPan Clicker** - 2 6LowPAN Clicker boards are included in the Creator Kit to allow you to complete hte 5 projects. Each Clicker connects to the Ci40 over 6LowPAN and acts as a remote sensor/actuator by using Click boards
+**6LowPan Clicker** - 2 6LowPAN Clicker boards are included in the Creator Kit to allow you to complete the 5 projects. Each Clicker connects to the Ci40 over 6LowPAN and acts as a remote sensor/actuator by using Click boards
 
 **Click** - 3 Click boards are included in your kit (Thermo3, Relay, PIR Motion Sensor) and many more are available from [MikroElektronika](http://www.mikroe.com/click/). These boards can be used to add new functions to your Clicker and Ci40 boards.
