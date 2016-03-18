@@ -8,13 +8,13 @@ This project requires the Ci40 from Creator Kit. It also uses the Relay Click bo
 
 ## Steps
 
-To complete these steps, refer to the [Toolbox](http://localhost:8000/Toolbox) for detailed descriptions of each action required.
+To complete these steps, refer to the [Toolbox](Toolbox.md) for detailed descriptions of each action required.
 
-* Get the code: [Pre-built Release](http://github.com) or [Source Code](http://github.com)
+* Get the code: [Pre-built Release](http://github.com/creatorkit) or [Source Code](http://github.com/creatorkit)
 * Connect the Relay Click board to one of the Ci40 Mikrobus sockets
-* [Connect](http://localhost:8000/Toolbox/#connecting-ci40-to-the-internet) Ci40 to the Internet
+* [Connect](Toolbox.md#connecting-ci40-to-the-internet) Ci40 to the Internet
 * On your Ci40, run the ""command"" command
-* [Provision](http://localhost:8000/Toolbox/#provisioning-ci40) Ci40
+* [Provision](Toolbox.md#provisioning-ci40) Ci40
 * Download the Android app (""Link"") or iOS app (""Link"").
 * ""Tap on 'Toggle relay' in the app""
 
