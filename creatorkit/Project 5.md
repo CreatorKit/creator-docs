@@ -8,16 +8,16 @@ This project requires the Ci40 and 2 Clicker boards from Creator Kit. It also us
 
 ## Steps
 
-To complete these steps, refer to the [Toolbox](http://localhost:8000/Toolbox) for detailed descriptions of each action required.
+To complete these steps, refer to the [Toolbox](Toolbox.md) for detailed descriptions of each action required.
 
-* Get the code: [Pre-built Release](http://github.com) or [Source Code](http://github.com)
-* [Flash](http://localhost:8000/Toolbox/#programming-a-6lowpan-clicker) the ""Temperature"" hex file onto one Clicker board - Make a note of which one it is
-* [Flash](http://localhost:8000/Toolbox/#programming-a-6lowpan-clicker) the ""Relay"" hex file onto the second Clicker board - Make a note of which one it is
-* [Connect](http://localhost:8000/Toolbox/#connecting-ci40-to-the-internet) Ci40 to the Internet
+* Get the code: [Pre-built Release](http://github.com/creatorkit) or [Source Code](http://github.com/creatorkit)
+* [Flash](Toolbox.md#programming-a-6lowpan-clicker) the ""Temperature"" hex file onto one Clicker board - Make a note of which one it is
+* [Flash](Toolbox.md#programming-a-6lowpan-clicker) the ""Relay"" hex file onto the second Clicker board - Make a note of which one it is
+* [Connect](Toolbox.md#connecting-ci40-to-the-internet) Ci40 to the Internet
 * On your Ci40, run the ""command"" command
-* [Provision](http://localhost:8000/Toolbox/#provisioning-ci40) Ci40
+* [Provision](Toolbox.md#provisioning-ci40) Ci40
 * Power on both Clicker boards
-* [Provision](http://localhost:8000/Toolbox/#provisioning-clicker) the Clickers via the Ci40 web interface
+* [Provision](Toolbox.md#provisioning-clicker) the Clickers via the Ci40 web interface
 * Press the button on the Button Clicker
 * Observe the LED on the LED Clicker
 * Log into your FlowCloud account and navigate to the Message Viewer - Observe it when you press the Button
