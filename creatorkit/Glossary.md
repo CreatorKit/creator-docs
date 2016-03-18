@@ -12,8 +12,10 @@
 
 **OpenWRT** - This is the Linux distribution used on Ci40 for the Creator Kit projects. Ci40 can run a variety of operating systems, but OpenWRT is used in these examples. [Openwrt website](https://openwrt.org/)
 
+**6LoWPAN** - 6LoWPAN is an acronym of IPv6 over Low power Wireless Personal Area Networks. It is a low power WiFi mechanism ideal for connecting small remote devices
+
 **6LowPan Clicker** - 2 6LowPAN Clicker boards are included in the Creator Kit to allow you to complete hte 5 projects. Each Clicker connects to the Ci40 over 6LowPAN and acts as a remote sensor/actuator by using Click boards
 
 **Click** - 3 Click boards are included in your kit (Thermo3, Relay, PIR Motion Sensor) and many more are available from [MikroElektronika](http://www.mikroe.com/click/). These boards can be used to add new functions to your Clicker and Ci40 boards.
 
-**6LowPAN** - A low power WiFi mechanism ideal for connecting small remote devices.
+.
