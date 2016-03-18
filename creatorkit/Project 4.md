@@ -1,3 +1,5 @@
+![Creator logo](../creatorlogo.png)
+
 # Project 4 - Remote Relay Control
 
 ## Intro
