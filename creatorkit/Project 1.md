@@ -16,7 +16,6 @@ To complete these steps, refer to the [Toolbox](Toolbox.md) for detailed descrip
 * [Flash](Toolbox.md#programming-a-6lowpan-clicker) the ""lwm2m-client-contiki-button"" hex file onto one Clicker board - Make a note of which one it is
 * [Flash](Toolbox.md#programming-a-6lowpan-clicker) the ""lwm2m-client-contiki-led"" hex file onto the second Clicker board - Make a note of which one it is
 * [Connect](Toolbox.md#connecting-ci40-to-the-internet) Ci40 to the Internet
-* On your Ci40, run the ""command"" command in the [serial terminal](Toolbox.md#connecting-to-ci40-via-serial)
 * [Provision](Toolbox.md#provisioning-ci40) Ci40
 * Power on both Clicker boards
 * [Provision](Toolbox.md#provisioning-clicker) the Clickers via the Ci40 web interface
