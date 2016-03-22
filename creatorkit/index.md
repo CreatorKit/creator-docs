@@ -13,4 +13,4 @@ The kit itself has 5 example projects which are detailed in this guide. Setting 
 
 The first project will allow you to press a button on one Clicker board and turn on an LED on the other. This establishes the basics of communication between your devices. Ci40 acts as the hub for this communication and also ensures that messages are recorded on FlowM2M via the Message Viewer on the FlowM2M website.
 
-After getting this project running, investigating the source code will give you an insight into how to send messages between devices on your network.
+After getting this project running, browsing through the source code will give you an insight into how to send messages between devices on your network.
