@@ -1,4 +1,4 @@
-![Creator Logo](../creatorlogo.png)
+![Creator Logo](../images/creatorlogo.png)
 
 # Toolbox
 
@@ -33,7 +33,7 @@ See [building code from source](#building-code-from-source) for information on h
 
 ### Connecting to Ci40 via Serial
 
-![serial](serialport.resized.jpg)
+![serial](../images/ci40serial.jpg)
 
 The next step is to connect to your Ci40 using a serial terminal. Connect a microUSB-USB A cable to the port within the Mikrobus connector and into your PC. You can use any serial terminal program you like set to the standard 115200-N-8-1. The following is an example using miniterm in Ubuntu
 
@@ -98,7 +98,7 @@ Before programming a Clicker board you need to apply power. You can use batterie
 
 In order to program the 6LoWPAN Clicker you need to connect a Pickit 3.
 
-![serial](pickit.resized.jpg)
+![serial](../images/programmingclicker.jpg)
 
 Make sure that the arrow indicating Pin1 on the back of the board is matched with the arrow on the Pickit3. Once this is done you need to run the MPLAB X IPE, available [here](http://microchip.wikidot.com/ipe:installation), and choose PIC32MX470F512H as the target device.
 
@@ -152,6 +152,3 @@ You should now be able to run the following in a directory of your choice.
 <code>$ cd build</code>
 
 <code>$ make</code>
-
-
-

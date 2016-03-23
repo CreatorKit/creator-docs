@@ -1,5 +1,5 @@
 
-![Creator logo] (creatorlogo.png)
+![Creator logo](../images/creatorlogo.png)
 
 # Using OpenWrt on Creator (Ci40) Marduk platform
 

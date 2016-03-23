@@ -1,4 +1,4 @@
-![Creator Logo](../creatorlogo.png)
+![Creator Logo](../images/creatorlogo.png)
 
 # Glossary
 
