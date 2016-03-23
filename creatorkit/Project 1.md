@@ -12,9 +12,10 @@ This project requires the Ci40 and 2 Clicker boards from Creator Kit. It does no
 
 To complete these steps, refer to the [Toolbox](Toolbox.md) for detailed descriptions of each action. You will need a [FlowM2M account](Toolbox.md#creating-a-flowm2m-account) too.
 
-* Get the code: [Pre-built Release](http://github.com/creatorkit) or [Source Code](http://github.com/creatorkit)
-* [Flash](Toolbox.md#programming-a-6lowpan-clicker) the ""lwm2m-client-contiki-button"" hex file onto one Clicker board - Make a note of which one it is
-* [Flash](Toolbox.md#programming-a-6lowpan-clicker) the ""lwm2m-client-contiki-led"" hex file onto the second Clicker board - Make a note of which one it is
+* Get the code: [Pre-built Release](http://github.com/creatorkit) or see the [build instructions](Toolbox.md#building-from-source) if you want to build from source.
+* [Flash](Toolbox.md#programming-a-6lowpan-clicker) the "lwm2m-client-button-sensor" hex file onto one Clicker board - Make a note of which one it is
+* [Flash](Toolbox.md#programming-a-6lowpan-clicker) the "lwm2m-client-led-actuator" hex file onto the second Clicker board - Make a note of which one it is
+* [Boot](Toolbox.md#creating-a-bootable-usb-drivemicrosd-card) OpenWrt on Ci40
 * [Connect](Toolbox.md#connecting-ci40-to-the-internet) Ci40 to the Internet
 * [Provision](Toolbox.md#provisioning-ci40) Ci40
 * Power on both Clicker boards
