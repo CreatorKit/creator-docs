@@ -48,8 +48,6 @@ Note:
 * You cannot boot from USB Drive while also powering the board via microUSB as they both use the same connector (the one next to the power socket). You will need to power the board using a power supply instead, or use a microSD card as your boot device.
 * To connect a USB pen drive, you need a USB A to microUSB OTG cable.
 
-### Formatting your USB Drive/microSD Card
-
 Before you connect your USB Drive or microSD Card (called "Storage Device" from this point on) to your Ubuntu machine, run the following:
 
 <code>$ df</code>
@@ -72,7 +70,7 @@ You can now take the Ci40 Creator Kit release from Github and copy it to the sto
 
 <code>$ sync</code>
 
-### Booting from USB Drive/SD Card
+## Booting from USB Drive/microSD Card
 
 In order to boot from USB you need to connect it via an On-the-go cable to the microUSB port next to the power connector. Once that is connected reboot the board. You will then have a window of opportunity to interrupt the default boot process (booting from the flash memory) by pressing a key in the serial terminal. This will give you access to the bootloader terminal.
 
