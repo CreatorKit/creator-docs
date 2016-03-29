@@ -94,17 +94,27 @@ Ci40 supports Ethernet for network connectivity.
 
 ## Programming a 6LoWPAN Clicker
 
-Before programming a Clicker board you need to apply power. You can use batteries, USB or (for purely for programming purposes) a Pickit programmer.
+Before programming a Clicker board you need to apply power. You can use batteries, USB or (purely for programming purposes) a Pickit3 programmer.
 
-In order to program the 6LoWPAN Clicker you need to connect a Pickit 3.
+The first step is to connect a Pickit3.
 
 ![serial](../images/programmingclicker.jpg)
 
 Make sure that the arrow indicating Pin1 on the back of the board is matched with the arrow on the Pickit3. Once this is done you need to run the MPLAB X IPE, available [here](http://microchip.wikidot.com/ipe:installation), and choose PIC32MX470F512H as the target device.
 
-If you want to, you can use the Pickit to power your board while you program. To do this, you need to configure MPLAB X IPE to enable the feature. Click "Settings" > "Advanced Mode". Click on the "Power" category on the left and click the checkbox for "Power Target Circuit from Tool".You can then go back to the "Operate" section and proceed.
+![IPE_1](../images/IPE_1.PNG)
 
-Select the desired .hex file, and click Program to flash the board.
+The Tool field will populate when your Pickit3 has been detected.
+
+![IPE_2](../images/IPE_2.PNG)
+
+Click on the Browse button next to the Source field and select the desired .hex file.
+
+Click Connect next to the Tool field to connect your Pickit3 to your Clicker board. You Clicker board will need to be powered on for this to work. Use USB, Battery or the optional 'power by Pickit3' method described at the end of this section.
+
+Once connected, you can click Program to flash the board. It should only take a few seconds to complete.
+
+OPTIONAL: If you want to, you can use the Pickit to power your board while you program. To do this, you need to configure MPLAB X IPE to enable the feature. Click "Settings" > "Advanced Mode". Click on the "Power" category on the left and click the checkbox for "Power Target Circuit from Tool". You can then go back to the "Operate" section and proceed.
 
 ## Creating a FlowM2M account
 
