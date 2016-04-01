@@ -132,11 +132,25 @@ The output of this command will include an eth0 "inet addr" which is the devices
 
 Using a different device connected to the same network you can now navigate to the Ci40 web interface by opening a browser and typing the IPaddress you got from the ifconfig command into the URL bar.
 
-You will be presented with a page that allows you to name the device, and also add a provisioning code. Use the code that you retrieved from the FlowM2M website earlier. Once you have provisioned you will be presented with a page allowing you to provision Clicker boards.
+You will be presented with a page that allows you to name the device, and also add the provisioning code you retrieved from the FlowM2M website.
+
+![ProvisionCi40](../images/provision_1.png)
+
+Once you have provisioned you will be presented with a page allowing you to provision Clicker boards.
 
 ## Provisioning Clicker
 
-Once your Ci40 is provisioned you can continue using the web interface to also provision Clicker boards if they have been programmed with Flowm2m enabled software. You will be presented with a list of 6LoWPAN devices that the Ci40 can find within range. If your Clickers are powered on, they should be displayed on this page. You can now provision these devices using FlowM2M. This step is required to make sure that only 6LoWPAN devices you want can access your datastores via Ci40.
+Once your Ci40 is provisioned you can continue using the web interface to also provision Clicker boards if they have been programmed with FlowM2M enabled software.
+
+You will be presented with a list of 6LoWPAN devices that are within range of the Ci40.
+
+![ProvisionClicker2](../images/provision_2.png)
+
+If your Clickers are powered on, they should be displayed on this page. You can now provision these devices using FlowM2M by selecting the checkbox next to the device(s) and clicking the 'Register' button. Once the devices are provisioned they should appear on the right side on the page (this may require a refresh).
+
+![ProvisionClicker3](../images/provision_3.png)
+
+This step is required to make sure that only 6LoWPAN devices you choose are able to access your datastores via Ci40.
 
 ## Building Code from source
 
