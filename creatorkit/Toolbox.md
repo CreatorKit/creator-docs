@@ -2,7 +2,7 @@
 
 # Toolbox
 
-The toolbox is a reference page for you to use to set up your kit. Follow the steps listed in the project pages and refer back to this page for more detail on individual steps.
+The toolbox is a reference page that details the steps required to set up your kit. Follow the steps listed in the project pages (i.e. [Project 1.md](Project 1.md)) and use this page as a reference for more detail on individual steps.
 
 ## Hardware
 
@@ -29,7 +29,7 @@ You can get pre-built releases or source code of the Creator Kit projects to wor
 
 [Source Code](http://github.com/CreatorKit/manifest)
 
-See [building code from source](#building-code-from-source) for information on how to use the source code.
+See [building from source code](#building-from-source-code) for information on how to use the source code.
 
 ### Connecting to Ci40 via Serial
 
@@ -114,15 +114,15 @@ Click Connect next to the Tool field to connect your Pickit3 to your Clicker boa
 
 Once connected, you can click Program to flash the board. It should only take a few seconds to complete.
 
-OPTIONAL: If you want to, you can use the Pickit to power your board while you program. To do this, you need to configure MPLAB X IPE to enable the feature. Click "Settings" > "Advanced Mode". Click on the "Power" category on the left and click the checkbox for "Power Target Circuit from Tool". You can then go back to the "Operate" section and proceed.
+OPTIONAL: If you want to, you can use the Pickit3 to power your board while you program. To do this, you need to configure MPLAB X IPE to enable the feature. Click "Settings" > "Advanced Mode". Click on the "Power" category on the left and click the checkbox for "Power Target Circuit from Tool". You can then go back to the "Operate" section and proceed.
 
 ## Creating a FlowM2M account
 
-In order to use your Creator Kit you will need to create a free account on [the FlowM2M website](http://www.flowcloud.io). This account allows you to manage your connected devices, and also interact with them remotely. You will use a device registration code from this site to provision devices using FlowM2M.
+In order to use your Creator Kit you will need to create a free account on [the FlowM2M website](http://beta.flowm2m.io). This account allows you to manage your connected devices, and also interact with them remotely. You will use a device registration code from this site to provision devices using FlowM2M.
 
 ## Provisioning Ci40
 
-Log in to your account on [the FlowM2M website](http://www.flowcloud.io) and view the Dashboard. From here you can navigate to the Devices page. This page will show all previously provisioned devices. In order to add a new device you need to click on the "Register" button, and then take a code.
+Log in to your account on [the FlowM2M website](http://beta.flowm2m.io) and view the Dashboard. From here you can navigate to the Devices page. This page will show all previously provisioned devices. In order to add a new device you need to click on the "Register" button, and then take a code.
 
 On your Ci40 you need to connect to a network via Ethernet to gain Internet access, and also access to the onboard web interface. Once connected to a network, you can type the following into the Ci40 terminal
 
@@ -150,24 +150,42 @@ If your Clickers are powered on, they should be displayed on this page. You can 
 
 ![ProvisionClicker3](../images/provision_3.png)
 
-This step is required to make sure that only 6LoWPAN devices you choose are able to access your datastores via Ci40.
 
-## Building Code from source
+## Building from source code
 
 Note: You do not need to do this to set up and run the example projects for Creator Kit. If you want to expand on the projects and eventually build your own it is recommended that you set up the first project and then come back to this section once you have seen the system in action. You can then move on to building your own IoT project using Creator Kit.
 
-Initially you need to install dependencies required to build. run the following the terminal on your Ubuntu build machine
+### Installing dependencies
 
-<code>$ sudo apt-get -y install g++ gcc binutils bzip2 flex python perl make libncurses5-dev libssl-dev grep unzip gawk subversion zlib1g-dev build-essential git mercurial cmake python-nose python-lxml</code>
+Initially you need to install dependencies required to build. Run the following in the terminal on your Ubuntu build machine
+
+<code>$ sudo apt-get -y install g++ gcc binutils bzip2 flex python perl make libncurses5-dev libncursesw5-dev libssl-dev grep unzip gawk subversion zlib1g-dev build-essential git mercurial cmake python-nose python-lxml</code>
+
+### Installing Contiki compiler
+
+In order to build Contiki code for Clicker boards you will need the XC32 compiler from Microchip. For 64-bit Ubuntu, 32-bit runtime libraries must be installed before the XC32 compiler can be run:
+
+<code>$ sudo apt-get install libc6:i386</code>
+
+Follow the official Linux installation instructions [here](http://microchip.wikidot.com/xc32:installation) to install the latest version.
+
+### Installing repo tool
 
 If you do not have repo installed run the following
+
+<code>$ mkdir -p ~/bin</code>
 
 <code>$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo</code>
 
 <code>$ chmod a+x ~/bin/repo</code>
 
+Update your ~/.bashrc file
 
-You should now be able to run the following in a directory of your choice.
+<code>export PATH=$PATH:~/bin</code>
+
+### Getting and building the code
+
+The following commands will sync to the master branch of the source repositories. To sync to a different branch append " -b <branch-name>" to the "repo init" command (e.g. repo init -u  https://github.com/CreatorKit/manifest.git -b dev).
 
 <code>$ repo init -u  https://github.com/CreatorKit/manifest.git</code>
 
@@ -176,3 +194,11 @@ You should now be able to run the following in a directory of your choice.
 <code>$ cd build</code>
 
 <code>$ make</code>
+
+Once complete you will find .hex files for Clicker boards and images for Ci40 in the build/output folder.
+
+If you want to build OpenWrt (for Ci40) or Contiki (for Clicker boards) separately you can:
+
+<code>$ make openwrt</code>
+
+<code>$ make contiki</code>
