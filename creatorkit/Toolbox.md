@@ -158,14 +158,19 @@ Note: You do not need to do this to set up and run the example projects for Crea
 
 Initially you need to install dependencies required to build. run the following the terminal on your Ubuntu build machine
 
-<code>$ sudo apt-get -y install g++ gcc binutils bzip2 flex python perl make libncurses5-dev libssl-dev grep unzip gawk subversion zlib1g-dev build-essential git mercurial cmake python-nose python-lxml</code>
+<code>$ sudo apt-get -y install g++ gcc binutils bzip2 flex python perl make libncurses5-dev libncursesw5-dev libssl-dev grep unzip gawk subversion zlib1g-dev build-essential git mercurial cmake python-nose python-lxml</code>
 
 If you do not have repo installed run the following
+
+<code>$ mkdir -p ~/bin
 
 <code>$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo</code>
 
 <code>$ chmod a+x ~/bin/repo</code>
 
+Update your ~/.bashrc to add repo path in linux path permanently
+
+<code>export PATH=$PATH:~/bin/</code>
 
 You should now be able to run the following in a directory of your choice.
 
