@@ -29,7 +29,8 @@ bool InitializeAndRegisterFlowDevice(void)
     return false;
 }
 ```
-**Note:**
+
+#### General guidelines
 * There is no white space before the parenthesis in a FunctionName(), but there *is* a space before the parenthesis in conditional statements: if (), for (), while () etc.
 * Opening braces are on the line following the closing parenthesis of the function or condition to which they relate.
 * The maximum recommended line length is 160 characters. For readability, lines longer than 160 characters may be wrapped.
@@ -136,7 +137,7 @@ bool IsLedObjectDefined(const AwaClientSession *session)
 }
 ```
 
-#### Good coding practise
+#### Good coding practice
 * Ideally functions should have a single exit point. The use of multiple return points is dangerous and makes it harder to read the code. Always consider what will happen if someone needs to append code to your function.
-* Where possible definitions should be used rather than raw values, e.g. use *AllocMessageBuf(MAX_MESSAGE_SIZE)* rather than  *AllocMessagBuf(1024)*. This ensures that all code sharing the same defined value will still work if the 'magic' value is updated.
+* Wherever possible definitions should be used rather than raw values, e.g. use *AllocMessageBuf(MAX_MESSAGE_SIZE)* rather than  *AllocMessagBuf(1024)*. This ensures that all code sharing the same defined value will still work if the 'magic' value is updated.
 * Recursion - **Do not use**. Embedded code has limited stack space.
