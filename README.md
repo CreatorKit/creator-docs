@@ -44,7 +44,7 @@ We welcome all contributions to this project and we give credit where it's due. 
 Find out more in the [contributor guide](ContributorGuide.md).
 
 ## Credits
-We would like to thank all of our current [contributors](CONTRIBUTERS).
+We would like to thank all of our current [contributors](CONTRIBUTORS).
 
 ## License information
 All code and documentation developed by Imagination Technologies Limited is licensed under the [BSD 3-clause license](LICENSE).
