@@ -38,14 +38,14 @@ In order to build Contiki code for Clicker boards you will need the XC32 compile
 Follow the official Linux installation instructions [here](http://microchip.wikidot.com/xc32:installation) to install the latest version.
 
 ## Running Ci40 board
-Connect to Ci40 using serial console by following steps [here](https://github.com/IMGCreator/openwrt#serial-console).
+Connect to Ci40 using serial console by following steps [here](https://github.com/CreatorDev/openwrt#serial-console).
 
 Different methods are available to boot Ci40 board
-* [Boot from USB](https://github.com/IMGCreator/openwrt#boot-from-usb)
-* [Boot from SD Card](https://github.com/IMGCreator/openwrt#boot-from-sd-card)
-* [TFTP Boot](https://github.com/IMGCreator/openwrt#tftp-boot)
-* [Boot from Flash](https://github.com/IMGCreator/openwrt#tftp-boot)
-* [System upgrade](https://github.com/IMGCreator/openwrt#system-upgrade)
+* [Boot from USB](https://github.com/CreatorDev/openwrt#boot-from-usb)
+* [Boot from SD Card](https://github.com/CreatorDev/openwrt#boot-from-sd-card)
+* [TFTP Boot](https://github.com/CreatorDev/openwrt#tftp-boot)
+* [Boot from Flash](https://github.com/CreatorDev/openwrt#tftp-boot)
+* [System upgrade](https://github.com/CreatorDev/openwrt#system-upgrade)
 
 ## Connecting Ci40 to the Internet
 Ci40 supports Ethernet for network connectivity.
