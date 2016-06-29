@@ -14,10 +14,10 @@ CreatorKit projects provides applications which runs on Ci40 MIPS board running 
 
 #### Repositories Overview
 CreatorKit project is spread across couple of organizations :-
-* [IMGCreator](https://github.com/IMGCreator/): This includes
-    * [Contiki](https://github.com/IMGCreator/contiki): Operating system that runs on MikroE boards.
-    * [OpenWrt](https://github.com/IMGCreator/openwrt): Linux distribution that runs on Ci40.
-    * [Openwrt Feeds](https://github.com/IMGCreator/openwrt-feeds): Collection on third-party  packages required by Openwrt.
+* [CreatorDev](https://github.com/CreatorDev/): This includes
+    * [Contiki](https://github.com/CreatorDev/contiki): Operating system that runs on MikroE boards.
+    * [OpenWrt](https://github.com/CreatorDev/openwrt): Linux distribution that runs on Ci40.
+    * [Openwrt Feeds](https://github.com/CreatorDev/openwrt-feeds): Collection on third-party  packages required by Openwrt.
 * [CreatorKit](https://github.com/CreatorKit/): This includes
     * [Build](https://github.com/CreatorKit/build): Describes steps for building CreatorKit project.
     * [Manifest](https://github.com/CreatorKit/manifest): Manifest for creating directory structure for CreatorKit project.
