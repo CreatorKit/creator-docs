@@ -10,10 +10,10 @@ Multiple device systems and cloud connectivity are becoming increasingly importa
 ## CreatorKit Overview
 Various terminologies used in CreatorKit project are explained at [Glossary](Glossary.md).
 
-CreatorKit projects provides applications which runs on Ci40 MIPS board running with OpenWrt Linux distribution and also makes use of MikroE boards for wide variety of uses.
+CreatorKit projects provide applications which run on Ci40 MIPS board having OpenWrt Linux distribution and also make use of MikroE boards for wide variety of uses.
 
 #### Repositories Overview
-CreatorKit project is spread across couple of organizations :-
+CreatorKit projects are spread across a couple of organizations :-
 * [CreatorDev](https://github.com/CreatorDev/): This includes
     * [Contiki](https://github.com/CreatorDev/contiki): Operating system that runs on MikroE boards.
     * [OpenWrt](https://github.com/CreatorDev/openwrt): Linux distribution that runs on Ci40.
@@ -26,11 +26,15 @@ CreatorKit project is spread across couple of organizations :-
     * [Libobjects](https://github.com/CreatorKit/libobjects): Collection of lwm2m and custom ipso objects for Clicker apps.
     * [Button-Led Controller](https://github.com/CreatorKit/button-led-controller): CreatorKit [Project 1](projects/Project_1.md) application for Creator Ci40 platform.
     * [Button Sensor](https://github.com/CreatorKit/button-sensor): MikroE 6loWPAN Clicker based lwm2m client button sensor application.
+    * [Device Manager](https://github.com/CreatorKit/device-manager): Application for provisioning the gateway device and constrained devices.
+    * [Motion-Led Controller](https://github.com/CreatorKit/motion-led-controller): CreatorKit [Project 2](projects/Project_2.md) application for Creator Ci40 platform.
+    * [Motion Sensor](https://github.com/CreatorKit/motion-sensor): MikroE 6loWPAN Clicker based lwm2m client motion sensor application.
     * [Creator Docs](https://github.com/CreatorKit/creator-docs): Entry level documentation for CreatorKit project.
 
 ## Projects
 CreatorKit as of now has following projects :-
 * [Project 1](projects/Project_1.md)
+* [Project 2](projects/Project_2.md)
 
 ## Getting Started
 Please refer [Getting Started](GettingStarted.md) guide for detailed steps that describes how to get CreatorKit up and running.
