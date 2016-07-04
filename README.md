@@ -29,12 +29,15 @@ CreatorKit project is spread across couple of organizations :-
     * [Led Actuator](https://github.com/CreatorKit/led-actuator): MikroE 6loWPAN Clicker based LWM2M client led actuator application.
     * [Button Sensor](https://github.com/CreatorKit/button-sensor): MikroE 6loWPAN Clicker based lwm2m client button sensor application.
     * [Device Manager](https://github.com/CreatorKit/device-manager): Application for provisioning the gateway device and constrained devices.
+    * [Light Controller](https://github.com/CreatorKit/light-controller): CreatorKit [Project 2](projects/Project_2.md) application for Creator Ci40 platform.
+    * [Motion Sensor](https://github.com/CreatorKit/motion-sensor): MikroE 6loWPAN Clicker based lwm2m client motion sensor application.
     * [Creator Docs](https://github.com/CreatorKit/creator-docs): Entry level documentation for CreatorKit project.
 
 ## Projects
 CreatorKit as of now has following projects :-
 * [Project 0](projects/Project_0.md)
 * [Project 1](projects/Project_1.md)
+* [Project 2](projects/Project_2.md)
 
 ## Getting Started
 Please refer [Getting Started](GettingStarted.md) guide for detailed steps that describes how to get CreatorKit up and running.
