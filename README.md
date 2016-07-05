@@ -24,7 +24,7 @@ CreatorKit project is spread across couple of organizations :-
     * [OpenWrt CreatorKit Feeds](https://github.com/CreatorKit/openwrt-ckt-feeds): Collection of CreatorKit specific packages for OpenWrt.
     * [Webscripts](https://github.com/CreatorKit/webscripts): Package which provides web interface for provisioning CreatorKit devices. It includes webpages as well as webservices.
     * [Libobjects](https://github.com/CreatorKit/libobjects): Collection of lwm2m and custom ipso objects for Clicker apps.
-    * [Led Controller](https://github.com/CreatorKit/led-controller): CreatorKit [Project 1](projects/Project_1.md) application for Creator Ci40 platform.
+    * [Button-Led Controller](https://github.com/CreatorKit/button-led-controller): CreatorKit [Project 1](projects/Project_1.md) application for Creator Ci40 platform.
     * [Button Sensor](https://github.com/CreatorKit/button-sensor): MikroE 6loWPAN Clicker based lwm2m client button sensor application.
     * [Light Controller](https://github.com/CreatorKit/light-controller): CreatorKit [Project 2](projects/Project_2.md) application for Creator Ci40 platform.
     * [Motion Sensor](https://github.com/CreatorKit/motion-sensor): MikroE 6loWPAN Clicker based lwm2m client motion sensor application.
