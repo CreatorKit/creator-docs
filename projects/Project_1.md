@@ -4,7 +4,7 @@
 
 ## Introduction
 
-In this project ci40 will observe the status of the buttons on one clicker board, when a button press LWM2M notification is received it will toggle an LED on the Ci40 board. For each button press the LED will toggle on and off.
+In this project Ci40 will observe the status of the buttons on one clicker board, when a button press LWM2M notification is received it will toggle an LED on the Ci40 board. For each button press the LED will toggle on and off.
 
 This project requires the Ci40 and 1 Clicker board from Creator Kit, no expansion boards.
 
@@ -23,5 +23,5 @@ The Ci40 is the controller of this project. It connects to the Internet (over Et
 The application running on Ci40 allows the Clicker to communicate with itself using AwaLWM2M.
 
 This project includes two applications
-* [Led Controller](https://github.com/CreatorKit/led-controller): Runs on Ci40 and observes any button presses on MikroE board, updates led status as per the changes received. For more info, read [this](https://github.com/CreatorKit/led-controller/blob/master/README.md).
+* [Button-Led Controller](https://github.com/CreatorKit/button-led-controller): Runs on Ci40 and observes any button presses on MikroE board, updates led status as per the changes received. For more info, read [this](https://github.com/CreatorKit/button-led-controller/blob/master/README.md).
 * [Button Sensor](https://github.com/CreatorKit/button-sensor): Runs on Clicker and senses any button presses on clicker board, updates button object for gateway. For more info,read [this](https://github.com/CreatorKit/button-sensor/blob/master/README.md).
