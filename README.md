@@ -31,7 +31,6 @@ CreatorKit project is spread across couple of organizations :-
 ## Projects
 CreatorKit as of now has following projects :-
 * [Project 1](projects/Project_1.md)
-* [Project 2](projects/Project_2.md)
 
 ## Getting Started
 Please refer [Getting Started](GettingStarted.md) guide for detailed steps that describes how to get CreatorKit up and running.
