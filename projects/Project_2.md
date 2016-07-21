@@ -16,10 +16,10 @@ To complete these steps, refer to the [Getting Started](../GettingStarted.md) fo
 * Do movement in front of motion-sensor Clicker and observe the LED on Ci40 board glowing for 5 seconds.
 
 ## How it works
-The Ci40 is the controller of this project. It connects to the Internet (over Ethernet) and to the motion-sensor Clicker (over 6LoWPAN).
+The Ci40 is the controller of this project. It connects to the Internet (over Ethernet and Wi-Fi) and to the motion-sensor Clicker (over 6LoWPAN).
 
 The application running on Ci40 allows the Clicker to communicate with itself using AwaLWM2M.
 
 This project includes two applications
-* [Light Controller](https://github.com/CreatorKit/light-controller): Runs on Ci40 and observes motion-sensor resource registered by MikroE board, updates led status as per the changes received. For more info, read [this](https://github.com/CreatorKit/light-controller/blob/master/README.md).
+* [Motion-Led Controller](https://github.com/CreatorKit/motion-led-controller): Runs on Ci40 and observes motion-sensor resource registered by MikroE board, updates led status as per the changes received. For more info, read [this](https://github.com/CreatorKit/motion-led-controller/blob/master/README.md).
 * [Motion Sensor](https://github.com/CreatorKit/motion-sensor): Runs on Clicker and detects any movement in the range of motion-click on clicker board, updates sensor object for gateway. For more info,read [this](https://github.com/CreatorKit/motion-sensor/blob/master/README.md).
