@@ -18,7 +18,7 @@ To complete these steps, refer to the [Getting Started](../GettingStarted.md) fo
 * Press the button on the Button Clicker and observe the LED on ci40 board
 
 ## How it works
-The Ci40 is the controller of this project. It connects to the Internet (over Ethernet) and to the button Clicker (over 6LoWPAN).
+The Ci40 is the controller of this project. It connects to the Internet (over Ethernet and Wi-Fi) and to the button Clicker (over 6LoWPAN).
 
 The application running on Ci40 allows the Clicker to communicate with itself using AwaLWM2M.
 
