@@ -28,12 +28,16 @@ CreatorKit project is spread across couple of organizations :-
     * [Button Sensor](https://github.com/CreatorKit/button-sensor): MikroE 6loWPAN Clicker based lwm2m client button sensor application.
     * [Light Controller](https://github.com/CreatorKit/light-controller): CreatorKit [Project 2](projects/Project_2.md) application for Creator Ci40 platform.
     * [Motion Sensor](https://github.com/CreatorKit/motion-sensor): MikroE 6loWPAN Clicker based lwm2m client motion sensor application.
+    * [Relay Gateway](https://github.com/CreatorKit/relay-gateway): CreatorKit [Project 3](projects/Project_3.md) application for Creator Ci40 platform.
+    * [Mobile Power Switch Android](https://github.com/CreatorKit/mobile_power_switch): CreatorKit [Project 3](projects/Project_3.md) android app for controlling relay.
+    * [Mobile Power Switch iOS](https://github.com/CreatorKit/mobile_ios_power_switch): CreatorKit [Project 3](projects/Project_3.md) iOS app for controlling relay.
     * [Creator Docs](https://github.com/CreatorKit/creator-docs): Entry level documentation for CreatorKit project.
 
 ## Projects
 CreatorKit as of now has following projects :-
 * [Project 1](projects/Project_1.md)
 * [Project 2](projects/Project_2.md)
+* [Project 3](projects/Project_3.md)
 
 ## Getting Started
 Please refer [Getting Started](GettingStarted.md) guide for detailed steps that describes how to get CreatorKit up and running.
