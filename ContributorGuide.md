@@ -225,7 +225,7 @@ $ git push --set-upstream origin dev_branch1
 - Select the branch you wish to submit as a pull request in the right hand box.
 - Click the *create* button.
 
-**Note.** *All Awa LightweightM2M development occurs on the dev branch. Developers should only submit patches against the dev branch.*
+**Note.** *All Creator development occurs on the dev branch. Developers should only submit patches against the dev branch.*
 
 An email will be sent to the project maintainers who will review your pull request.
 
