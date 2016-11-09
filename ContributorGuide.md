@@ -1,36 +1,51 @@
 ![Creator Logo](images/creatorlogo.png)
 ----
 
-# Creator Kit contributor guide
+# Creator contributor guide.
 
-Any contribution to CreatorKit project is highly appreciated. CreatorKit project is not limited to just one repository or one organization. Various repositories are maintained as explained in [Repositories Overview](README.md#repositories-overview). Hence you are allowed to contribute in any of these repositories by following common rules/guidelines/ptrocess.
 
-## Reporting issues and bugs
-If you discover a bug, or find an issue or area that you feel needs improvement:
-* Navigate to the "Issues" tab on the project Github page e.g https://github.com/CreatorKit/build/issues.
-* Click the "New Issue" button.
+## Reporting issues and bugs.
+
+If you discover a bug, have a technical question for the development team, or find an issue or area that you feel needs improvement:
+
+* Navigate to the "Issues" tab on the project Github repository 
+![](issuesTab.jpg)
+* Click the "New Issue" button.  
+
 
 When making your report, be as clear and concise as possible. Use the following list as a guide:
-* Describe the issue, and why you believe it's a problem.
-* Include the CreatorKit release version or commit id for the particular repository.
-* Describe environment details (OS/distribution etc).
-* State how often the issue has occurred.
-* Describe the steps to take to uncover or reproduce the issue (if any).
-* Expected behaviour.
-* Actual behaviour.
-* Any additional infomation, log output etc.
 
-## Developer submissions
-#### Create a Github account
+* Describe the issue, and why you believe it's a problem. 
+* Include the project version or commit id.  
+* Describe environment details (OS/distribution etc).  
+* State how often the issue has occurred.  
+* Describe the steps to take to uncover or reproduce the issue (if any).  
+* Expected behaviour.  
+* Actual behaviour.  
+* Any additional information, log output etc.  
+
+
+----
+
+
+## Developer submissions.
+
+If you have a submission for a code change to resolve a bug, improve code implementation, or bring a new feature to the project you should create a Github Pull Request for your submission.
+
+### Create a Github account.
+
 Before you can contribute you require a Github account.
 
-You can sign up for a free account here: [https://github.com/](https://github.com/).
+You can sign up for a free account here: [https://github.com/](https://github.com/)
 
-#### Add your ssh key to your Github account
+### Add your ssh key to your Github account.
+
 If you are using a Linux development environment, you can normally find your public key in *~/.ssh/id_rsa.pub*. Alternatively you can generate a new key with the following command:
+
 ```
 ssh-keygen -t rsa -b 4096 -C "user.name@email.com"
 ````
+
 When you're prompted to enter a file in which to save the key, press Enter to accept the default file location.
 
 Now that you have a key:
@@ -53,7 +68,8 @@ rbURhDGu/tLAAK/6np3fai5ef4beZDbdhXrWS+rjOKSU0lRifUXU/JJFicG2PiX2B1InuqGLwGwAp/3
 xoHqsuyNhTw== user.name@email.com
 
 ```
-#### Set your git user name
+
+### Set your git user name.
 
 It is important that you set the user name and email address to use for any commits to the 
 git repository:
@@ -65,23 +81,32 @@ $ git config --global user.email User.Name@email.com
 
 Use the same email address that you used to sign up for your github account.
 
-#### Forking the repository
+### Forking the repository.
 
-If you want to contribute to the project the best practice is to create a fork. To do so navigate to repository of your choice and click on the *fork* button at the top right of the screen. If you are a member of multiple organisations you will be presented with a selection screen which can be used to select where to create the fork. Click on your user account to create the fork.
+If you want to contribute to the project the best practice is to create a fork. To do so
+navigate to the project's repository and click on the *fork* button at the top right of the 
+screen. If you are a member of multiple organisations you will be presented with a selection screen
+which can be used to select where to create the fork. Click on your user account to create the fork.
 
 You can now clone your fork: 
 
 ```
-$ git clone git@github.com:<username>/<repo_name>.git
+$ git clone git@github.com:<username>/<repository>.git
 ```
 
-#### Keeping your fork in sync
+### Keeping your fork in sync.
 
 In order to easily pull down upstream changes to your fork you need to setup a new remote.
 
 ```
-$ git remote add upstream git@github.com/<organization_name>/<repo_name>.git
+$ git remote add upstream git@github.com/<organisation>/<repository>.git
 ```
+For the example of OpenWrt for the Creator Ci40 in the Creatordev organisation this would be
+```
+$ git remote add upstream git@github.com/CreatorDev/openwrt.git
+```
+
+
 
 You can now fetch from the upstream repository with:
 
@@ -96,7 +121,8 @@ $ git checkout master
 $ git merge upstream/master
 ```
 
-#### Making changes
+### Making changes.
+
 The simplest way of working is to keep a clean master branch in the new fork and to create branches for each new pull request. This prevents merge conflicts with the upstream
 master branch, and allows you to make changes to your pull request if required.
 
@@ -110,10 +136,11 @@ $ git checkout master -b dev-branch1 --track
 
 Once you have created your branch make your changes, then commit them to your new branch.
 
-#### Coding style
+### Coding style
 The CreatorKit coding style guidelines can be found in the [coding style guide](CodingGuidelines.md).
 
-#### Commit messages.
+
+### Commit messages.
 
 For the commit message, the following rules apply:
 
@@ -122,7 +149,7 @@ For the commit message, the following rules apply:
  * Provide a detailed description of the change.
  * Leave a blank line after the description.
  * If the patch relates to an issue, add a line with 'Ref: ISSUE_ID'.
-  * Add a Git 'Signed-off-by' line using ````git commit -s```` or ````git commit --sign-off```` (see *Signing your work* below).
+ * Add a Git 'Signed-off-by' line using ````git commit -s```` or ````git commit --sign-off```` (see *Signing your work* below).
 
  Example:
 
@@ -140,12 +167,18 @@ For the commit message, the following rules apply:
 
 ````
 
-#### Signing your work
-CreatorKit project requires contributors to accept the Developer Certificate of Origin (DCO) from developercertificate.org.
+
+
+### Signing your work.
+
+CreatorDev projects require contributors to accept the Developer Certificate of Origin (DCO) from developercertificate.org. Github.com defines a contributor as "A contributor is someone from the outside not on the core development team of the project that wants to contribute some changes to a project."
 
 The sign-off is a single line at the end of your commit comment to certify that you either wrote the supplied code or otherwise have the right to pass on the code as open source.
 
+
 Certifying your contribution asserts that *for the current submission* the following statement is true:
+
+
 
 ```
 Developer Certificate of Origin
@@ -191,13 +224,14 @@ To certify your submission just add the following line to *every* git commit mes
 Signed-off-by: User Name <user.name@email.com>
 
 ````
+
 If you set-up your user.name and user.email via git config, you can sign your commit automatically with git commit:
 
 ````
 $ git commit --signoff
 ````
 
-#### Pushing your changes to your branch.
+### Pushing your changes to your branch.
 
 If you specified --track when you created your new branch you should be able to simply push using
 
@@ -217,15 +251,15 @@ or alternatively setup branch tracking
 $ git push --set-upstream origin dev_branch1
 ```
 
-#### Creating a pull request.
+### Creating a pull request.
 
-- Navigate to https://github.com/username/repo_name/pulls
+- Navigate to https://github.com/*username*/*repository*/pulls
 - Click on *New pull request*
-- Select the branch on which you wish to submit your change in the left hand box.
+- Select the repository's master as the base in the left hand box
 - Select the branch you wish to submit as a pull request in the right hand box.
 - Click the *create* button.
 
-**Note.** *All Creator development occurs on the dev branch. Developers should only submit patches against the dev branch.*
+**Note.** Developers should only submit patches against the master branch.
 
 An email will be sent to the project maintainers who will review your pull request.
 
@@ -244,3 +278,11 @@ request will be automatically added to your pull request.
 In some cases you may be asked to rebase your commits, either to bring them in-line
 with the current master branch, to tidy up any commit comments or to add a forgotten 
 sign-off. You can find more information on rebasing [here](RebasingInfo.md).
+
+
+----
+
+----
+
+
+
